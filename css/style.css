@@ -1,0 +1,62 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+:root{
+  --text--opens-sans: 'Open Sans', sans-serif;
+  --text--opens-sans400: 'Open Sans', sans-serif;
+
+}
+
+.signpost{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--text--opens-sans400);  
+  margin-bottom: 3em;
+}
+
+/* Set the display property of the container element to flex to center the SVGs vertically */
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background-color: black; */
+  width: 100%;
+}
+
+header{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--text--opens-sans400);  
+  margin-bottom: 1.5em;
+}
+
+h1{
+  font-family: var(--text--opens-sans);  
+  font-weight: 400;
+}
+
+p{
+  font-size: 1.5em;
+  margin: 0 3em 0 3em;
+  text-align: center;
+}
+
+/* Set the width and height of the SVGs to 50% to make them medium-sized */
+img {
+  width: 50%;
+  height: 50%;
+}
+
+/* Make the SVGs responsive by setting the max-width and max-height to 100% */
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
