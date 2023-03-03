@@ -9,6 +9,14 @@ html, body {
 
 }
 
+.main_container{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .signpost{
   display: flex;
   flex-flow: row;
@@ -16,6 +24,7 @@ html, body {
   align-items: center;
   font-family: var(--text--opens-sans400);  
   margin-bottom: 3em;
+  gap: 1em;
 }
 
 /* Set the display property of the container element to flex to center the SVGs vertically */
@@ -24,9 +33,59 @@ html, body {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* background-color: black; */
   width: 100%;
+  margin-bottom: 3em;
+  transition: 0.7s;
+}
+
+.activitie{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
+}
+
+.btn {
+  padding: 0.7em 0em 0.7em 0em;
+  height: 18px;
+  width: 140px;
+  text-align: center;
+  box-shadow: 4px 4px 7px rgba(155, 155, 155, 0.35);
+  border-radius: 13px;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.activitie-1, .activitie-2, .activitie-3, .activitie-4, .activitie-5, .activitie-6{
+  transition: 0.7s;
+  display: none;
+}
+
+.btn-1:hover{
+  background-color: #FE938C;
+  color: white;
+}
+.btn-2:hover{
+  background-color: #EDAF97;
+  color: white;
+}
+.btn-3:hover{
+  background-color: #C49792;
+  color: white;
+}
+.btn-4:hover{
+  background-color: #AD91A3;
+  color: white;
+}
+.btn-5:hover{
+  background-color: #9D91A3;
+  color: white;
+}
+.btn-6:hover{
+  background-color: #CCE8CC;
 }
 
 header{
@@ -39,13 +98,14 @@ header{
 }
 
 h1{
+  font-size: 3em;
   font-family: var(--text--opens-sans);  
   font-weight: 400;
 }
 
 p{
   font-size: 1.5em;
-  margin: 0 3em 0 3em;
+  margin: 0 4em 0 4em;
   text-align: center;
 }
 
@@ -53,10 +113,31 @@ p{
 img {
   width: 50%;
   height: 50%;
+  margin: 0 0 2em 0;
 }
 
 /* Make the SVGs responsive by setting the max-width and max-height to 100% */
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.day_description{
+  padding: 0.7em 0.9em 0.7em 0.9em;
+  box-shadow: 4px 4px 7px rgba(155, 155, 155, 0.45);
+  border-radius: 13px;
+  font-family: var(--text--opens-sans);  
+}
+
+@media (max-width: 850px) {
+  .signpost{
+    flex-flow: column;
+    gap: 0.5em;
+  }
+
+  h1{
+    font-size: 2em;
+    font-family: var(--text--opens-sans);  
+    font-weight: 600;
+  }
 }
